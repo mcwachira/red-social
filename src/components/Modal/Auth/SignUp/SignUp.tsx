@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useSetRecoilState } from 'recoil';
 import { auth } from '@/src/firebase/client.App';
 import {useCreateUserWithEmailAndPassword} from 'react-firebase-hooks/auth'
-import { FirebaseErrors } from '@/src/firebase/errors';
+import { FIREBASE_ERRORS } from '@/src/firebase/errors';
 
 
 const SignUp:React.FC= () => {
@@ -109,7 +109,7 @@ value={password}
                 bg='gray.50'/>
 
 {error || userError && (
-    <Text textAlign='center' fontWeight='10pt' color='red'>{error || FirebaseErrors[userError?.message as keyof typeof FirebaseErrors ]}</Text>
+    <Text textAlign='center' fontWeight='10pt' color='red' fontSize='10pt'>{error || FIREBASE_ERRORS[userError?.message as keyof typeof FIREBASE_ERRORS ]}</Text>
 )}
             <Button width='100%' height='36px' mt={2} mb={2} type='submit' isLoading={loading}> Sign Up</Button>
 
