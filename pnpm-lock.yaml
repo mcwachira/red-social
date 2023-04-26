@@ -17,6 +17,7 @@ specifiers:
   next: 13.3.1
   react: 18.2.0
   react-dom: 18.2.0
+  react-firebase-hooks: ^5.1.1
   recoil: ^0.7.7
   typescript: 5.0.4
 
@@ -37,6 +38,7 @@ dependencies:
   next: 13.3.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-firebase-hooks: 5.1.1_cc2lyxibhadbxlachuyom42n54
   recoil: 0.7.7_biqbaboplfbrettd7655fr4n2y
   typescript: 5.0.4
 
@@ -3934,6 +3936,16 @@ packages:
 
   /react-fast-compare/3.2.1:
     resolution: {integrity: sha512-xTYf9zFim2pEif/Fw16dBiXpe0hoy5PxcD8+OwBnTtNLfIm3g6WxhKNurY+6OmdH1u6Ta/W/Vl6vjbYP1MFnDg==}
+    dev: false
+
+  /react-firebase-hooks/5.1.1_cc2lyxibhadbxlachuyom42n54:
+    resolution: {integrity: sha512-y2UpWs82xs+39q5Rc/wq316ca52QsC0n8m801V+yM4IC4hbfOL4yQPVSh7w+ydstdvjN9F+lvs1WrO2VYxpmdA==}
+    peerDependencies:
+      firebase: '>= 9.0.0'
+      react: '>= 16.8.0'
+    dependencies:
+      firebase: 9.20.0
+      react: 18.2.0
     dev: false
 
   /react-focus-lock/2.9.4_mj3jo2baq3jslihcop7oivercy:
